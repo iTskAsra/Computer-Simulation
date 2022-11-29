@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.21)  29 NOV 2022 17:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.21)  29 NOV 2022 20:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -606,26 +606,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--85
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 87.
-
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
-
- []
-
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 91.
+(mdframed)              on input line 93.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 95.
-Package mdframed Info: Not enough space on this page on input line 97.
+(mdframed)              on input line 97.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.97     \end{problem}
+l.99     \end{problem}
                        [1]
-Package mdframed Info: Not enough space on this page on input line 97.
+Package mdframed Info: Not enough space on this page on input line 99.
  [2] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: C4A78932A39E3CA429CA63F6CA31738E;70.
@@ -633,7 +627,7 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  12198 strings out of 478268
  193559 string characters out of 5846347
- 519120 words of memory out of 5000000
+ 520120 words of memory out of 5000000
  30225 multiletter control sequences out of 15000+600000
  472476 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -652,7 +646,7 @@ ive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
 ve/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive
 /2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2
 022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (3 pages, 157264 bytes).
+Output written on main.pdf (3 pages, 157878 bytes).
 PDF statistics:
  101 PDF objects out of 1000 (max. 8388607)
  65 compressed objects within 1 object stream
