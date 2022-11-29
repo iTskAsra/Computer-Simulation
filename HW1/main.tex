@@ -1,0 +1,97 @@
+
+%hi
+\documentclass{article}
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb,amsfonts, fancyhdr, color, comment, graphicx, environ}
+\usepackage{xcolor}
+\usepackage{mdframed}
+\usepackage[shortlabels]{enumitem}
+\usepackage{indentfirst}
+\usepackage{hyperref}
+\renewcommand{\footrulewidth}{0.8pt}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+
+
+\pagestyle{fancy}
+
+
+
+\newenvironment{problem}[2][Problem]
+    { \begin{mdframed}[backgroundcolor=gray!20] \textbf{#1 #2} \\}
+    {  \end{mdframed}}
+
+
+\newenvironment{solution}{\textbf{Solution}}
+
+
+\lhead{Kasra Amani}
+\rhead{Computer Simulation} 
+\chead{\textbf{Assignment 2}}
+\lfoot{Dr. Bardia Safaei}
+\rfoot{Sharif University of Technology}
+\def\thesection{\alph{section}}
+
+\begin{document}
+\input{coverPage}%not necessary but looks fancy
+    \begin{problem}{1}
+    	\textbf{Jitter:} Continuous, Dynamic and Stochastic.\\
+    	\textbf{Capacitor Lifetime:} Continuous, Static and Stochastic.\\
+    	\textbf{Power consumption of a switch:} Continuous, Static and Deterministic.\\
+    	\textbf{Processing n packets:} Discrete, Dynamic and Deterministic.
+    \end{problem}
+    
+    \begin{problem}{2}
+    	Imagine a store clerk waiting for the next customer; the time it takes for the next customer 
+    	to arrive is independent of previous customers.\\
+    	Rolling a dice is also memoryless.\\
+    	The time it takes for the next hardware failure to happen does not depend on 
+    	previous failures and thus, it is also memoryless (this is the reason we can never predict
+    	hardware failures).
+    \end{problem}
+    \begin{problem}{3}
+    	\begin{section}{}
+    		\noindent \textbf{Advantages: }can predict and avoid life threatening and dangerous 
+    		situations - can speed up the passing of time and study a system's behavior in advance - 
+    		Is cost effective (mostly)\\ \\
+    		\textbf{Disadvantages: }Missing a (seemingly) insignificant detail in the 
+    		implementation can cause devastating losses in the result - It can be expensive to 						measure environmental variables and implement the software - To simulate something 
+    		a thorough and complete understanding of that subject is required
+    	\end{section}
+    	\begin{section}{}
+    		\noindent
+    		LIFO (like a stack): The advantage is the processor is sure that 
+    		the latest task in the queue is what it should work on; but the disadvantage is
+    		the earlier tasks can starve and never be attended to.\\ \\
+    		FIFO (first come first serve): It acts fairly in the sense that if the task arrives
+    		earlier it will be processed sooner, but on the flipside, tasks at the end of the queue
+    		will have to wait a long time.\\ \\
+    		HIFO (highest value first out): A valuing system must be designed and tasks
+    		must be valued according to it; then the task with the highest value will 
+    		be attended to first. The advantage is clear, since important tasks
+    		will be done sooner, but on the other side, other tasks might starve.
+    	\end{section}
+    	\begin{section}{}
+    	 	\noindent
+    	 	Simulation software can be used to train new employees in an environment where
+    	 	real training can be both costly and risky.\\ \\
+    	 	In a business the risk-reward process in different aspects of the organization can
+    	 	be simulated via a simulation software and the results can assist the board of directors
+    	 	to decide the future plans of that business.
+    	\end{section}
+    \end{problem}
+    \begin{problem}{4}
+    	In the Jupyter notebook.
+    \end{problem}
+    \begin{problem}{5}
+        In the Jupyter notebook.
+    \end{problem}
+    \begin{problem}{6}
+        In the Jupyter notebook.
+    \end{problem}
+
+\end{document}

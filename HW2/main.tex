@@ -1,0 +1,84 @@
+
+%hi
+\documentclass{article}
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb,amsfonts, fancyhdr, color, comment, graphicx, environ}
+\usepackage{xcolor}
+\usepackage{mdframed}
+\usepackage[shortlabels]{enumitem}
+\usepackage{indentfirst}
+\usepackage{hyperref}
+\renewcommand{\footrulewidth}{0.8pt}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+
+
+\pagestyle{fancy}
+
+\DeclareRobustCommand{\bbone}{\text{\usefont{U}{bbold}{m}{n}1}}
+
+\DeclareMathOperator{\EX}{\mathbb{E}}% expected value
+
+
+\newenvironment{problem}[2][Problem]
+    { \begin{mdframed}[backgroundcolor=gray!20] \textbf{#1 #2} \\}
+    {  \end{mdframed}}
+
+
+\newenvironment{solution}{\textbf{Solution}}
+
+
+\lhead{Kasra Amani}
+\rhead{Computer Simulation} 
+\chead{\textbf{Assignment 2}}
+\lfoot{Dr. Bardia Safaei}
+\rfoot{Sharif University of Technology}
+\def\thesection{\alph{section}}
+
+\begin{document}
+\input{coverPage}%not necessary but looks fancy
+    \begin{problem}{1}
+    	\begin{section}{}
+    		\noindent
+    		$1 - P(X\leq x) = P(X>x)$ \\
+    		We want to know how many $P(x_i)$s are in this summation; it is repeated in every 
+    		sequence until we reach $x=x_i$ and thus, it is repeated $x_i$ times; so we can 
+    		rewrite the given statement as follows:\\
+    		$\displaystyle\sum_{x=0}^\infty x_iP(X=x_i) = \EX(X)$
+    	\end{section}
+    	
+    	\begin{section}{}
+    		\noindent
+    		We need to show that $P(Z=z)=\frac{e^{-\lambda}\lambda^z}{z!}$ where 
+    		$\lambda = \lambda_1+\lambda_2$:\\
+    		Since $\displaystyle Z=X+Y$: $P(Z=z) = \displaystyle\sum_{i=0}^{z}P(X=i,Y=z-i)$; $X$ and $Y$ are independent 
+    		thus:\\ 
+    		$=\displaystyle\sum_{i=0}^{z}P(X=i)P(Y=z-i) = \sum_{i=0}^z\frac{1}{i!(z-i)!}e^{-						\lambda_1}\lambda_1^ie^{-\lambda_2}\lambda_2^{z-i} = \sum_{i=0}^z\frac{z!}{i!(z-i)!}					\frac{e^{-\lambda_1}\lambda_1^ie^{-\lambda_2}\lambda_2^{z-i}}{z!}$ \\
+    		$= \displaystyle\sum_{i=0}^{z}\displaystyle\binom{z}{i}\frac{e^{-\lambda_1}								\lambda_1^ie^{-\lambda_2}\lambda_2^{z-i}}				{z!} = \displaystyle\sum_{i=0}					^{z}\displaystyle\binom{z}{i}\frac{e^{-(\lambda_1+						\lambda_2)}}{z!}				\lambda_1^i\lambda_2^{z-i} = \frac{e^{-\lambda}}{z!}\displaystyle\sum_{i=0}^{z}							\displaystyle\binom{z}{i}\lambda_1^i\lambda_2^{z-i}$\\
+    		(using binomial expansion) $=  \displaystyle\frac{e^{-\lambda}}{z!}(\lambda_1+							\lambda_2)^z = 
+    		\frac{e^{-\lambda}\lambda^z}{z!}$ and the proof is concluded.
+    		
+    	\end{section}
+    \end{problem}
+    
+    \begin{problem}{2}
+    	
+    \end{problem}
+    
+    \begin{problem}{3}
+    	
+    \end{problem}
+    
+    \begin{problem}{4}
+    	TBD.
+    \end{problem}
+    
+    \begin{problem}{5}
+    	Code.
+    \end{problem}
+    
+\end{document}
