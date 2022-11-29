@@ -66,7 +66,22 @@
     \end{problem}
     
     \begin{problem}{2}
-    	
+    	\\
+    	\textbf{Lemma:} The $n$th person necessarily sits in either the first seat or the
+    	last one. \\ \textbf{Proof by contradiction:} If the $n$th person isn't sitting in 
+    	either of those two, he must be sitting in the $i$th seat where $2\leq i\leq n-1$;
+    	so the $i$th seat was empty when the last person arrived and decided to sit in it;
+    	but if it had been empty until the end, it was also empty the moment that $i$th person
+    	himself arrived and he must have sat there but he didn't and the $n$th person is now
+    	sitting there so the lemma must be correct. \\ \\
+    	We now divide the problem into $n$ steps; each step consists of the $i$th person arriving 
+    	and taking a seat. The fate of the last person is decided the moment someone sits
+    	in either the last or the first seat (because of the lemma proven earlier) and since 
+    	the chances of the last or first being chosen is equal in all of the $n$ 
+    	steps (either $0$ when the person deciding to sit down has their designated seat available
+    	or equal to each other otherwise), the chances of the last person arriving and finding 
+    	their seat empty is $\displaystyle\frac{p_1}{2}+\frac{p_2}{2}+...+\frac{p_n}{2} = \frac{p_1+p_2+...+p_n}{2}$   where we know $\displaystyle\sum_{i=1}^{n}p_i=1$ and thus, the chances of the last person
+    	finding their seat empty upon arrival is $\frac{1}{2}$.
     \end{problem}
     
     \begin{problem}{3}
