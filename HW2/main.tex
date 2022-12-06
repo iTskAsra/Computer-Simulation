@@ -81,7 +81,7 @@
     	steps (either $0$ when the person deciding to sit down has their designated seat available
     	or equal to each other otherwise), the chances of the last person arriving and finding 
     	their seat empty is $\displaystyle\frac{p_1}{2}+\frac{p_2}{2}+...+\frac{p_n}{2} = \frac{p_1+p_2+...+p_n}{2}$   where we know $\displaystyle\sum_{i=1}^{n}p_i=1$ and thus, the chances of the last person
-    	finding their seat empty upon arrival is $\frac{1}{2}$.
+    	finding their seat empty upon arrival is $\displaystyle\frac{1}{2}$.
     \end{problem}
     
     \begin{problem}{3}
@@ -91,11 +91,29 @@
     \end{problem}
     
     \begin{problem}{4}
-    	TBD.
+    	First we form the matrix except for the diagonal: $\begin{bmatrix}
+    	q_{1} & q_{12} & q_{13} \\
+    	q_{21} & q_{2} & q_{23} \\
+    	q_{31} & q_{32} & q_{3}
+    	\end{bmatrix} = \begin{bmatrix}
+    	q_{1} & 1 & 0\\
+    	0 & q_{2} & 1\\
+    	0.5 & 0.5 & q_{3}
+    	\end{bmatrix}$ 
+    	\\ Now we form the diagonal so that every row sums up to $0$:$G = \begin{bmatrix}
+    	-1 & 1 & 0\\
+    	0 & -1 & 1\\
+    	0.5 & 0.5 & -1
+    	\end{bmatrix}$
+    	\\ \\To calculate the limiting distribution, we form the following equation system:\\
+    	$\pi_1 = \frac{1}{2}\pi_3$\\ \\$
+    	\pi_2 = \frac{1}{2}\pi_3 + \pi_1$\\ \\$
+    	\pi_3 = \pi_2$\\ \\$\pi_1+\pi_2+\pi_3 = 1$\\ Solving the equation system gives us the following: $\displaystyle\pi_1=\frac{1}{5} , \pi_2=\frac{2}{5} , \pi_3=\frac{2}{5}$
+    	
     \end{problem}
     
     \begin{problem}{5}
-    	Code(TBD).
+    	Excel file
     \end{problem}
     
 \end{document}
