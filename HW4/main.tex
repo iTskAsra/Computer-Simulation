@@ -1,0 +1,67 @@
+
+%hi
+\documentclass{article}
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb,amsfonts, fancyhdr, color, comment, graphicx, environ}
+\usepackage{xcolor}
+\usepackage{mdframed}
+\usepackage[shortlabels]{enumitem}
+\usepackage{indentfirst}
+\usepackage{hyperref}
+\renewcommand{\footrulewidth}{0.8pt}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+
+
+\pagestyle{fancy}
+
+\DeclareRobustCommand{\bbone}{\text{\usefont{U}{bbold}{m}{n}1}}
+
+\DeclareMathOperator{\EX}{\mathbb{E}}% expected value
+
+
+\newenvironment{problem}[2][Problem]
+    { \begin{mdframed}[backgroundcolor=gray!20] \textbf{#1 #2} \\}
+    {  \end{mdframed}}
+
+
+\newenvironment{solution}{\textbf{Solution}}
+
+
+\lhead{Kasra Amani}
+\rhead{Computer Simulation} 
+\chead{\textbf{Assignment 2}}
+\lfoot{Dr. Bardia Safaei}
+\rfoot{Sharif University of Technology}
+\def\thesection{\alph{section}}
+
+\begin{document}
+\input{coverPage}%not necessary but looks fancy
+    \begin{problem}{1}
+    	\begin{section}{}
+    	\noindent
+    	\textbf{1. } Results must be produced quickly. \\
+    	\textbf{2. } Different computer architectures must be capable of running the algorithm. \\
+    	\textbf{3. } Results must be repeatable. \\
+    	\textbf{4. } Imitate the uniformity and independence of an ideal random number generator. \\
+    	\textbf{5. } Long life cycles. \\
+    	\end{section}
+    	\begin{section}{}
+    		\noindent
+    		\textbf{1. } Since $c\neq0$ it's a case of mixed congruential
+    		method and since $m = 2^b$, $c$ is prime to $m$ and $a=1+4k$
+    		the cycle length of the algorithm is $m=2^b=256$.
+    		\\ \\ \textbf{2. } This is a case of multiplicative congruential methods and with an odd seed($X_0$), since $m=2^{10}$ and 
+    		$a=8\times814 + 5$, the cycle will be $\frac{m}{4}=256$.
+    	\end{section}
+    
+    \end{problem}
+	\begin{problem}{2}
+		Code.
+	\end{problem}
+    
+\end{document}
